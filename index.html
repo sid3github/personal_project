@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" 
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+     <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Personal Website</title>
+      <style> 
+      body {
+          background: lightgrey;
+      }
+            marquee {
+                         width: 100%;
+                         background-color: teal;
+                         color: #fff;
+                     }
+                     marquee > p {
+                         font-size: 15px;
+                     }
+
+                  </style>
+    </head>
+
+    <body id="home" class="scrollspy">  
+<!-- Navbar         -->
+        <div class="navbar-fixed">
+            <nav class="teal">
+                <div class="container">
+                    <div class="nav-wrapper">
+                        <a href="#" class="brand-logo">V A S</a>
+                        <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+                            <i class="material-icons">menu</i>
+                        </a>
+                        <ul class="right hide-on-med-and-down">
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#about us">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#gallery">Gallery</a>
+                            </li>
+                            <li>
+                                <a href="#admission">Admission</a>
+                            </li>
+                            <li>
+                                <a href="#contact us">Contact Us</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <ul class="sidenav" id="mobile-nav">
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+                <li>
+                    <a href="#about us">About Us</a>
+                </li>
+                <li>
+                    <a href="#gallery">Gallery</a>
+                </li>
+                <li>
+                    <a href="#admission">Admission</a>
+                </li>
+                <li>
+                    <a href="#contact us">Contact Us</a>
+                </li>
+            </ul>
+            <marquee behavior="scroll" scrollamount="6" direction="left-align"><p><b>Visionary Associate & Services (VAS), Gajuwaka is one of the (VAS) group of Educational nstitutions, 
+                    started in the year 1997 with the aim of imparting ‘quality’ education.</b></p></marquee>
+<!-- Section Slider -->
+<div class="slider">
+    
+        <ul class="slides">
+          <li>
+            <img src="http://sfsgajuwaka.com/images/slider/1.jpg"> <!-- random image -->
+            <div class="caption center-align">
+              <h2>My School</h2>
+              <h4 class="light grey-text text-lighten-3 hide-on-small-only">Here's our small slogan.</h4>
+            </div>
+          </li>
+          <li>
+            <img src="http://sfsgajuwaka.com/images/slider/2.jpg"> <!-- random image -->
+            <div class="caption left-align">
+              <h2>The Best in Business</h2>
+              <h4 class="light grey-text text-lighten-3 hide-on-small-only">Here's our small slogan.</h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+                    
+      
+
+
+    <!-- Compiled and minified jquery -->
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+            $(document).ready(function(){
+                $('.slider').slider({indicators: false,transition: 500,height: 500});
+            });
+            
+        </script>
+    </body>
+  </html>
+        
