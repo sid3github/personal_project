@@ -24,7 +24,7 @@
                      }
                      
                      iframe {
-                         border: 2px solid teal;
+                         border: 3px solid teal;
                      }
                      
                      .slider {
@@ -32,16 +32,14 @@
                      }
 
                      .card {
-                        border: 2px solid teal;
+                        border: 3px solid teal;
                      }
 
-                    h3 {
-                        color: #fff;
-                    }
-                    
-                    .parallax > img {
-                        border: 2px solid teal;
-                    }
+                     .parallax-container {
+                        height: 300px;
+                     }
+
+
                   </style>
     </head>
 
@@ -119,7 +117,7 @@
       <div class="row">
           <div class="container">
             <div class="col s12 m6 l4">
-              <div class="card medium">
+              <div class="card medium card-panel hoverable">
                 <div class="card-image">
                   <img src="http://sfsgajuwaka.com/images/school.jpg">
                   <span class="card-title"><b>Our School</b></span>
@@ -131,7 +129,7 @@
               </div>
             </div>
             <div class="col s12 m6 l4">
-                    <div class="card medium">
+                    <div class="card medium card-panel hoverable">
                       <div class="card-image">
                         <img src="http://sfsgajuwaka.com/images/vision.jpg">
                         <span class="card-title"><b>Vision & Mission</b></span>
@@ -143,7 +141,7 @@
                     </div>
                   </div>
                   <div class="col s12 m6 l4">
-                        <div class="card medium">
+                        <div class="card medium card-panel hoverable">
                           <div class="card-image">
                             <img src="http://sfsgajuwaka.com/images/principle.jpg">
                             <span class="card-title"><b>Principal's Messages</b></span>
@@ -179,14 +177,16 @@
         </div>
     </div>
 </div>
-          
+
+<div class="parallax-container">
+        <div class="parallax"><img src="http://sfsgajuwaka.com/images/vision.jpg"></div>
+      </div>
+       
 <div class="row">
-        <div class="parallax-container">
-                <div class="parallax"><img src="http://sfsgajuwaka.com/images/vision.jpg"></div>
         <div class="reveal-title center-align">
-                <h3>School Facilities</h3>
+                <h3><span class="teal-text">School</span> Facilities</h3>
     <div class="col s12 m6 l2">
-        <div class="card small">
+        <div class="card small card-panel hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img class="activator" src="http://sfsgajuwaka.com/images/facilities/computer.png">
                 </div>
@@ -201,7 +201,7 @@
     </div>
   </div>
   <div class="col s12 m6 l2">
-        <div class="card small">
+        <div class="card small card-panel hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img class="activator" src="http://sfsgajuwaka.com/images/facilities/lab.png">
                 </div>
@@ -216,7 +216,7 @@
     </div>
   </div>
   <div class="col s12 m6 l2">
-        <div class="card small">
+        <div class="card small card-panel hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img class="activator" src="http://sfsgajuwaka.com/images/facilities/playground.png">
                 </div>
@@ -231,7 +231,7 @@
     </div>
   </div>
   <div class="col s12 m6 l2">
-        <div class="card small">
+        <div class="card small card-panel hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img class="activator" src="http://sfsgajuwaka.com/images/facilities/school.png">
                 </div>
@@ -246,7 +246,7 @@
     </div>
   </div>
   <div class="col s12 m6 l2">
-        <div class="card small">
+        <div class="card small card-panel hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img class="activator" src="http://sfsgajuwaka.com/images/facilities/blood.png">
                 </div>
@@ -261,7 +261,7 @@
     </div>
   </div>
   <div class="col s12 m6 l2">
-        <div class="card small">
+        <div class="card small card-panel hoverable">
                 <div class="card-image waves-effect waves-block waves-light">
                   <img class="activator" src="http://sfsgajuwaka.com/images/facilities/sport.jpg">
                 </div>
@@ -277,7 +277,10 @@
   </div>
 </div>
 </div>
-</div>           
+     
+<div class="parallax-container">
+        <div class="parallax"><img src="http://sfsgajuwaka.com/images/vision.jpg"></div>
+      </div>
       
 
 
@@ -300,6 +303,7 @@
             $(document).ready(function(){
                 $('.parallax').parallax();
             });
+            
             
         </script>
     </body>
